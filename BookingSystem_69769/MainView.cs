@@ -35,6 +35,7 @@ namespace BookingSystem_69769
             var globalStore = GlobalStore.GetInstance();
             welcome_text.Text = $"Witaj, {globalStore.Username}";
 
+            reservations_view.ResetFilters();
             reservations_view.LoadBookings();
         }
 
